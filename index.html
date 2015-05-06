@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Scaffold : Scaffold generator for Laravel 5">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Scaffold</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/adrianogl/scaffold">View on GitHub</a>
+
+          <h1 id="project_title">Scaffold</h1>
+          <h2 id="project_tagline">Scaffold generator for Laravel 5</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/adrianogl/scaffold/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/adrianogl/scaffold/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="laravel-5-scaffold-generator" class="anchor" href="#laravel-5-scaffold-generator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Laravel 5 Scaffold Generator</h1>
+
+<p>Hi, this is a scaffold generator for Laravel 5.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a id="step-1-install-through-composer" class="anchor" href="#step-1-install-through-composer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step 1: Install Through Composer</h3>
+
+<pre><code>composer require 'adrianogl/scaffold' --dev
+</code></pre>
+
+<h3>
+<a id="step-2-add-the-service-provider" class="anchor" href="#step-2-add-the-service-provider" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step 2: Add the Service Provider</h3>
+
+<p>Open <code>config/app.php</code> and, to your <strong>providers</strong> array at the bottom, add:</p>
+
+<pre><code>"Adrianogl\Scaffold\GeneratorsServiceProvider"
+</code></pre>
+
+<h3>
+<a id="step-3-run-artisan" class="anchor" href="#step-3-run-artisan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step 3: Run Artisan!</h3>
+
+<p>You're all set. Run <code>php artisan</code> from the console, and you'll see the new commands <code>make:scaffold</code>.</p>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h2>
+
+<pre><code>php artisan make:scaffold Tweet --schema="title:string:default('Tweet #1'), body:text"
+</code></pre>
+
+<p>This command will generate:</p>
+
+<pre><code>app/Tweet.php
+app/Http/Controllers/TweetController.php
+database/migrations/2015_04_23_234422_create_tweets_table.php
+database/seeds/TweetTableSeeder.php
+resources/views/layout.blade.php
+resources/views/tweets/index.blade.php
+resources/views/tweets/show.blade.php
+resources/views/tweets/edit.blade.php
+resources/views/tweets/create.blade.php
+</code></pre>
+
+<p>And don't forget to run:</p>
+
+<pre><code>php artisan migrate
+</code></pre>
+
+<h2>
+<a id="scaffold" class="anchor" href="#scaffold" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scaffold</h2>
+
+<p><img src="http://i62.tinypic.com/11maveb.png" alt="image">
+<img src="http://i58.tinypic.com/eqchat.png" alt="image">
+<img src="http://i62.tinypic.com/20h7k8n.png" alt="image"></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Scaffold maintained by <a href="https://github.com/adrianogl">adrianogl</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
