@@ -1,6 +1,6 @@
 {
   "name": "adrianogl/scaffold",
-  "description": "Extend Laravel 5's generators scaffold.",
+  "description": "Extend Laravel 5 generators scaffold.",
   "version": "1.0.0",
   "keywords": ["laravel", "generators", "scaffold" , "laravel5"],
   "license": "MIT",
